@@ -1,102 +1,403 @@
 [
-    {
-        "pregunta": "¿Cuál de los siguientes contenidos no es aplicable en la formulación de los objetivos de una planificación estratégica?",
-        "opciones": [
-            "Que los objetivos sean claros y concisos",
-            "Que los objetivos tengan una métrica",
-            "Que los objetivos no estén limitados en el tiempo",
-            "Que los objetivos tengan en cuenta las características del equipo"
-        ],
-        "respuestaCorrecta": 2
-    },
-    {
-        "pregunta": "¿Qué herramienta se utiliza comúnmente para analizar el entorno externo e interno de una organización?",
-        "opciones": [
-            "Matriz FODA / DAFO",
-            "Diagrama de Gantt",
-            "Análisis de Pareto",
-            "Método Scrum"
-        ],
-        "respuestaCorrecta": 0
-    },
-    {
-        "pregunta": "En la gestión de proyectos, ¿qué significan las siglas KPI?",
-        "opciones": [
-            "Key Project Indicator",
-            "Key Performance Indicator",
-            "Knowledge Process Integration",
-            "Keep Production Initiative"
-        ],
-        "respuestaCorrecta": 1
-    },
-    {
-        "pregunta": "¿Cuál es el planeta más cercano al Sol en nuestro sistema solar?",
-        "opciones": [
-            "Venus",
-            "Marte",
-            "Mercurio",
-            "Júpiter"
-        ],
-        "respuestaCorrecta": 2
-    },
-    {
-        "pregunta": "¿Qué gas representa la mayor parte de la atmósfera terrestre?",
-        "opciones": [
-            "Oxígeno",
-            "Nitrógeno",
-            "Dióxido de carbono",
-            "Argón"
-        ],
-        "respuestaCorrecta": 1
-    },
-    {
-        "pregunta": "¿Quién pintó la famosa obra de 'La Mona Lisa'?",
-        "opciones": [
-            "Vincent van Gogh",
-            "Pablo Picasso",
-            "Leonardo da Vinci",
-            "Miguel Ángel"
-        ],
-        "respuestaCorrecta": 2
-    },
-    {
-        "pregunta": "En geografía, ¿cuál es el océano más grande y profundo de la Tierra?",
-        "opciones": [
-            "Océano Atlántico",
-            "Océano Índico",
-            "Océano Glacial Ártico",
-            "Océano Pacífico"
-        ],
-        "respuestaCorrecta": 3
-    },
-    {
-        "pregunta": "¿En qué año se cayó el Muro de Berlín, marcando un hito histórico?",
-        "opciones": [
-            "1985",
-            "1989",
-            "1991",
-            "1993"
-        ],
-        "respuestaCorrecta": 1
-    },
-    {
-        "pregunta": "¿Qué órgano del cuerpo humano es el principal responsable de filtrar la sangre?",
-        "opciones": [
-            "El hígado",
-            "Los riñones",
-            "El corazón",
-            "Los pulmones"
-        ],
-        "respuestaCorrecta": 1
-    },
-    {
-        "pregunta": "¿Cuál es el metal cuya estructura es líquida a temperatura ambiente?",
-        "opciones": [
-            "Mercurio",
-            "Plomo",
-            "Galio",
-            "Bario"
-        ],
-        "respuestaCorrecta": 0
-    }
+  {
+    "pregunta": "¿Qué factores de producción se deben tener en cuenta en una empresa?",
+    "opciones": ["Elementos necesarios para producir.", "Mercadotecnia.", "Factores financieros.", "Todos."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Señala la afirmación falsa sobre los principios de la intervención pública en la economía:",
+    "opciones": ["Proteger derechos y libertades.", "Producir bienes y servicios de interés público.", "Fomentar actividades monopolistas.", "Ofrecer ayudas directas a personas con minusvalías."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "La UE considera PYME a las empresas con:",
+    "opciones": ["Menos de 250 trabajadores.", "Volumen de negocio <= 50 millones €.", "Balance <= 43 millones €.", "Todas son ciertas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes inversiones no es una inversión productiva?",
+    "opciones": ["Inversiones de reemplazamiento.", "Inversiones para reducir costes.", "Inversiones en obligaciones.", "Inversiones de ampliación."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "La responsabilidad social de la empresa (RSE) es:",
+    "opciones": ["El cumplimiento de las normas jurídicas.", "La responsabilidad legal de la empresa.", "La integración voluntaria de las preocupaciones sociales y medioambientales.", "Todas las anteriores."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "La teoría de Schumpeter sobre la principal función del empresario supone:",
+    "opciones": ["Innovación.", "Asunción de riesgos.", "Innovación más asunción de riesgos.", "Ninguna es cierta."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "La teoría de Frank H. Knight sobre la principal función del empresario supone:",
+    "opciones": ["Innovación.", "Asunción de riesgos.", "Innovación más asunción de riesgos.", "Ninguna es cierta."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "La teoría que considera la asignación de recursos del mercado frente a los realizados por la empresa es:",
+    "opciones": ["La teoría de los costes de transacción.", "La teoría de los costes emergentes.", "La teoría de los costes de mercado.", "La teoría de los costes empresariales."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "En relación con las empresas de nueva creación, las ratios de supervivencia a los cinco años son de:",
+    "opciones": ["Algo más de una de cada dos.", "Algo más de una de cada tres.", "Algo más de una de cada cuatro.", "Algo más de una de cada cinco."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes contenidos no se contemplan en un plan de empresa?",
+    "opciones": ["Estudio de mercado.", "Plan de marketing operativo.", "Plan de tesorería.", "Estudio de imagen y reputación."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La sociedad mercantil:",
+    "opciones": ["No siempre es una asociación voluntaria de personas.", "Sirve también para la actividad de una ONG.", "Se puede constituir para ayuda social.", "Es necesario que se constituya con la aportación de un fondo real de bienes."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La sociedad virtual…",
+    "opciones": ["No es un tipo de sociedad mercantil y no requiere personal.", "No es un tipo de sociedad mercantil y requiere personal.", "Es un tipo de sociedad mercantil que no precisa de personal.", "Es un tipo de sociedad mercantil que precisa de personal."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "En las sociedades de responsabilidad limitada:",
+    "opciones": ["No es necesario un mínimo de socios.", "El capital mínimo es de 3.006 euros.", "Las participaciones sociales se denominan acciones.", "Todas son ciertas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "En las sociedades anónimas:",
+    "opciones": ["El capital mínimo es de 60.000 euros.", "El capital debe estar totalmente suscrito.", "El capital debe estar desembolsado al menos en un 25%.", "Todas son ciertas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Señala la afirmación correcta en relación con las sociedades cooperativas:",
+    "opciones": ["Son sociedades de capital.", "No tienen fines democráticos.", "El capital social es fijo.", "Tienen un fuerte carácter mutualista."],
+    "comment": "T1-P5 corrected into T2-P5",
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La sociedad laboral:",
+    "opciones": ["Puede ser Anónima o de Responsabilidad Limitada.", "La mayoría del capital debe ser propiedad de los trabajadores.", "Ningún socio puede tener más de 1/3 del capital (salvo entidades públicas).", "Todas son ciertas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La certificación negativa del nombre de la sociedad se solicita en:",
+    "opciones": ["El registro de la propiedad.", "La agencia tributaria.", "El registro mercantil central.", "El ayuntamiento."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "En relación con la sociedad comanditaria simple:",
+    "opciones": ["Precisa de un capital social mínimo de 3.005€.", "Precisa de un capital social mínimo de 60.000€.", "Capital entre 3.005€ y 60.000€.", "No existe un capital social mínimo."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "¿Qué responsabilidades asume el empresario individual en relación con sus deudas?",
+    "opciones": ["Limitada según su patrimonio.", "Limitada según su patrimonio actual.", "Ilimitada con su patrimonio actual y futuro.", "Ilimitada solo con su patrimonio actual."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "La diferencia entre capital social y patrimonio es:",
+    "opciones": ["Significan lo mismo.", "Capital: suma de valores nominales de acciones; Patrimonio: conjunto de bienes de la persona jurídica.", "Capital: conjunto de bienes; Patrimonio: suma de valores nominales.", "B y C son incorrectas."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "¿Quién determina cómo se ha de evaluar el trabajo y la productividad de los empleados?",
+    "opciones": ["Dirección operativa.", "Alta dirección.", "Dirección intermedia.", "Todas son ciertas."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "Trabajo en equipo, asumir riesgos o facilidad para las relaciones humanas son cualidades de:",
+    "opciones": ["Alta dirección.", "Dirección intermedia.", "Dirección operativa.", "Todas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Habitualmente cuando hablamos de horizonte a corto plazo hablamos de:",
+    "opciones": ["Entre uno y tres años.", "Menor a 3 años.", "Un período de un año.", "Un período de un año, aunque depende de la actividad."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La implementación operativa de las acciones a llevar a cabo en el ejercicio se define en:",
+    "opciones": ["El presupuesto.", "El plan estratégico.", "El plan de marketing.", "El cuadro de mando integral."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "Señala cuál de las siguientes afirmaciones es correcta en relación con el control:",
+    "opciones": ["Es una etapa del proceso de planificación.", "Permite corregir desviaciones.", "Se debe realizar a posteriori.", "Todas son ciertas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "El estilo de liderazgo en el que el líder toma las decisiones sin consultar se denomina:",
+    "opciones": ["Democrático.", "Laissez-faire.", "Autocrático.", "Paternalista."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "El sistema de dirección 'Laissez-faire' se caracteriza por:",
+    "opciones": ["Un control estricto.", "Participación del grupo en la toma de decisiones.", "Mínima interferencia del jefe en las decisiones del grupo.", "Una etapa de planificación."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "En la matriz de Covey, para centrarse en resultados debemos enfocarnos en las actividades:",
+    "opciones": ["Urgentes e importantes.", "Urgentes y no importantes.", "No urgentes e importantes.", "No urgentes y no importantes."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "Según Stephen Covey la 'delegación en recadero' significa:",
+    "opciones": ["Centrarse en resultados.", "Centrarse en métodos.", "Centrarse en lo importante.", "No aplica ningún principio o criterio."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Asegurarse de que el equipo tiene los recursos necesarios es una estrategia de:",
+    "opciones": ["Gestión del tiempo.", "Motivación del equipo.", "Dinamización.", "Logística."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "Señala cuál de las siguientes características no corresponde a la de un organigrama:",
+    "opciones": ["Pueden ser horizontales o verticales.", "Compresibilidad.", "Factibilidad.", "Veracidad."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "En los organigramas anchos la relación de autoridad disminuye…",
+    "opciones": ["Hacia arriba.", "Hacia abajo.", "Hacia la derecha.", "Hacia la izquierda."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "La cadena de mando es el conjunto de relaciones de autoridad que se establecen entre departamentos:",
+    "opciones": ["Verdadero.", "Falso.", "En algunas ocasiones.", "Siempre que lo establezca la dirección."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "Respecto a las organizaciones centralizadas frente a las descentralizadas, señale cuál es falsa:",
+    "opciones": ["La centralización crea uniformidad en políticas.", "La descentralización aumenta la motivación de niveles bajos.", "La centralización permite decisiones más rápidas en la base.", "La descentralización requiere mejores sistemas de control."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "El número de subordinados que un directivo puede supervisar con eficacia es:",
+    "opciones": ["El nivel de autoridad.", "La unidad de mando.", "El tramo de control.", "La jerarquía."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "La estructura organizativa que combina la departamentalización por funciones y por proyectos es:",
+    "opciones": ["Lineal.", "Staff.", "Funcional.", "Matricial."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Tipos de departamentación que se aplican en la práctica:",
+    "opciones": ["Por funciones.", "Por territorio.", "Por clientes.", "Todas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Los conflictos de autoridad en estructuras de gestión de proyectos se producen más en:",
+    "opciones": ["Estructura funcional y matricial.", "Estructura matricial y equipos de proyecto.", "Estructura funcional y equipos de proyecto.", "Todas por igual."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "Para una empresa que empieza a gestionar proyectos internos la estructura más apropiada es:",
+    "opciones": ["La estructura funcional.", "La estructura matricial.", "La estructura por equipos de proyecto.", "Cualquiera de las anteriores."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "Para la gestión de proyectos tipo industria aeronáutica la estructura más apropiada es:",
+    "opciones": ["La estructura funcional.", "La estructura matricial.", "La estructura por equipos de proyecto.", "Cualquiera de las anteriores."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "El grado de diferenciación de los productos o servicios podría ser…",
+    "opciones": ["Oportunidad o fortaleza.", "Fortaleza o debilidad.", "Oportunidad o amenaza.", "Amenaza o debilidad."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "Que los precios de nuestros productos sean percibidos por los clientes más caros que los de la competencia es una…",
+    "opciones": ["Oportunidad.", "Fortaleza.", "Amenaza.", "Debilidad."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "El encarecimiento, escasez o abundancia de materias primas podría ser…",
+    "opciones": ["Oportunidad o fortaleza.", "Fortaleza o debilidad.", "Oportunidad o amenaza.", "Amenaza o debilidad."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "A los objetivos estratégicos los debemos fijar…",
+    "opciones": ["Antes de realizar el diagnóstico DAFO.", "Después de formular las estrategias.", "Después de realizar el diagnóstico DAFO.", "Es indiferente."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "La estrategia de liderazgo en costes de Porter consiste en:",
+    "opciones": ["Lograr los costes más bajos mediante la experiencia y otros factores.", "Vender los productos más baratos del mercado.", "Reducir la calidad para bajar el precio.", "Todas son ciertas."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "La estrategia de diferenciación de Porter consiste en:",
+    "opciones": ["Fabricar productos de lujo.", "Gastar mucho en publicidad.", "Ser diferentes a la competencia.", "Lograr que el producto sea percibido como único por el cliente."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La estrategia de enfoque de Porter consiste en concentrarse en algunos segmentos…",
+    "opciones": ["Para obtener una ventaja en costes.", "Para obtener una ventaja en diferenciación.", "Para obtener una ventaja en costes o diferenciación.", "Para obtener una ventaja en reputación."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "La estrategia de crecimiento más apropiada para una Pyme es…",
+    "opciones": ["La estrategia de diversificación.", "La estrategia de desarrollo del mercado.", "La estrategia de penetración.", "La estrategia de desarrollo de productos."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "Señale cuál de las siguientes oraciones no hace referencia al término «agile»:",
+    "opciones": ["Flexibilidad.", "Capacidad de adaptación.", "Principio de autoridad de arriba hacia abajo.", "Autocuestionarse."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes affirmations relacionada a la innovación es incorrecta?",
+    "opciones": ["La transferencia tecnológica es clave.", "La empresa debe autofinanciarse.", "El plazo de la innovación no es relevante.", "Es el motor de crecimiento del siglo XXI."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "Selecciona cuál de las siguientes afirmaciones es correcta en relación con la ley de la demanda:",
+    "opciones": ["Permite hacer predicciones sobre la evolución del mercado.", "Una variable es el precio del producto.", "Una variable es la demanda del producto.", "Todas son ciertas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "¿Qué cuestiones básicas se plantea todo sistema económico en el mecanismo de mercado?",
+    "opciones": ["Qué bienes se van a producir.", "Cómo se van a producir.", "Para quién se van a producir.", "Todos."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "El modelo «diagrama de las tijeras» afirma que el precio viene definido por la acción conjunta del coste de producción y de la utilidad marginal:",
+    "opciones": ["Es verdadero.", "Es falso.", "Depende.", "Es cierto solo cuando la utilidad marginal es positiva."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "¿Qué variables influyen en la demanda?",
+    "opciones": ["El precio de los bienes relacionados.", "La renta de los consumidores.", "Los gustos y preferencias.", "Todas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La ley de la oferta determina que la cantidad ofertada de un bien…",
+    "opciones": ["Aumente con el precio del bien.", "Disminuya con el precio del bien.", "No varía con el precio del bien.", "Aumente si disminuye el precio."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "La cantidad ofertada de un producto está relacionada con el precio de forma:",
+    "opciones": ["Inversa.", "Directa.", "Indistinta.", "No tiene relación."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "¿Qué variables influyen en la oferta?",
+    "opciones": ["El precio de las materias primas.", "Los salarios de los trabajadores.", "Expectativas y elementos sociales.", "Todos."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "El punto de equilibrio del mercado es:",
+    "opciones": ["El punto de satisfacción para compradores.", "El punto de satisfacción para vendedores.", "A + B", "Ninguno."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "En relación con la elasticidad del mercado, señalar la opción incorrecta:",
+    "opciones": ["Es un coeficiente.", "Mide la amplitud del mercado.", "Puede ser inelástica.", "Puede ser perfectamente elástica."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "Cuando la elasticidad de la demanda es infinita:",
+    "opciones": ["Es imposible.", "Es perfectamente elástica.", "Es inelástica.", "Es unitaria."],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "La dirección de recursos humanos engloba:",
+    "opciones": ["Selección de personal.", "Formación y evaluación.", "Remuneración.", "Todos."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "¿Cuál de estas actividades no es propia de la dirección de RR. HH?:",
+    "opciones": ["Planificación de RR. HH.", "Reclutamiento y selección de personal.", "Orientación y formación de personal.", "Reputación corporativa."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Referente a la formación en aprendizaje, señala cuál de las siguientes afirmaciones es falsa:",
+    "opciones": ["Se realiza cuando la capacitación requiere un corto período de tiempo.", "Se realiza en trabajos que requieren nivel de destreza elevado.", "El nuevo empleado trabaja como ayudante de otro con experiencia.", "Se realiza durante un período prolongado."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "Los programas de formación fuera del trabajo suelen utilizarse cuando:",
+    "opciones": ["El coste de los errores en el trabajo es elevado.", "No se puede realizar en el lugar de trabajo por motivos de seguridad.", "Se requiere un ambiente más tranquilo para el aprendizaje.", "Todas son ciertas."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones es correcta en relación con la evaluación del desempeño?:",
+    "opciones": ["Permite identificar necesidades de formación.", "Sirve de base para la promoción.", "Ayuda a mejorar la comunicación.", "Todas son ciertas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La valoración de los puestos de trabajo sirve para:",
+    "opciones": ["Determinar el valor relativo de cada puesto en la organización.", "Evaluar a las personas que ocupan los puestos.", "Despedir trabajadores.", "Ninguna de las anteriores."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "Señala cuál de las siguientes afirmaciones sobre el salario justo es falsa:",
+    "opciones": ["Debe estar en relación con el puesto desempeñado.", "Debe ser similar a empresas del entorno.", "Debe estar ligado al rendimiento.", "Debe ser independiente del resultado económico de la empresa."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La retribución en especie es un salario:",
+    "opciones": ["No en dinero, sino en materiales u objetos.", "Es una concesión de beneficios o ventajas.", "Puede formar parte de un salario mixto.", "Todas las anteriores."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "En relación con el salario por tiempo fijo, señala la afirmación falsa:",
+    "opciones": ["El trabajador tiene alta calificación.", "Interesa más la calidad que la cantidad.", "Es difícil medir el producto final.", "Ofrece incentivo a la productividad."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "La retribución por incentivos contempla:",
+    "opciones": ["Salario base.", "Prima por ahorro de tiempo.", "Prima por producción.", "Todos los anteriores."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "De las siguientes definiciones, señale la correcta:",
+    "opciones": ["Coste: consumo valorado en dinero de bienes y servicios necesarios para la producción.", "Pago: se trata de un endeudamiento de la empresa.", "Gasto: salida de dinero en efectivo que parte de la empresa para el medio exterior.", "Todos son falsos."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "En relación con el concept de productividad…",
+    "opciones": ["Se trata del rendimiento de un factor productivo dado.", "Se asocia a la idea de eficiencia.", "Es la capacidad de producir que pretende cualquier factor.", "Todos."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "En relación con los costes medios, señalar la afirmación falsa:",
+    "opciones": ["Se obtienen dividiendo el coste fijo total entre la producción.", "La curva de coste medio total tiene forma de U.", "La forma de la curva depende de la eficiencia en que se emplean los recursos marginales.", "La forma de la curva es independiente de la eficiencia."],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "El coste variable medio es:",
+    "opciones": ["El coste variable total dividido por el número de unidades producidas.", "El coste fijo dividido por las unidades.", "El coste total menos el coste fijo.", "Ninguna es correcta."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "En relación con los costes marginales:",
+    "opciones": ["Es el incremento del coste total al aumentar la producción en una unidad.", "La curva de coste marginal corta a la de costes medios en su punto mínimo.", "Es clave para decidir cuánto producir.", "Todas son ciertas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Los costes fijos son aquellos que:",
+    "opciones": ["Varían con la producción.", "No existen a largo plazo.", "Son independientes del volumen de producción a corto plazo.", "B y C son ciertas."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "El óptimo empresarial:",
+    "opciones": ["Es el punto donde el coste unitario iguala al marginal.", "Se encuentra en el mínimo de costes unitarios totales.", "Se denomina óptimo de la planta.", "Todos."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Respecto a la remanencia de costes:",
+    "opciones": ["Es también llamado histéresis.", "Al reducir la dimensión, los costes no bajan en la misma proporción.", "Los costes se reducen menos de lo esperado.", "Todos son ciertos."],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "El óptimo empresarial también es conocido como:",
+    "opciones": ["Óptimo de explotación.", "Óptimo de costes.", "Óptimo de Bernoulli.", "Óptimo de Taylor."],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "El umbral de rentabilidad:",
+    "opciones": ["Define cuándo hay histéresis.", "Es el punto de máximo beneficio.", "Define cuándo empiezan las pérdidas.", "Define el punto a partir del cual la empresa empieza a tener beneficios."],
+    "respuestaCorrecta": 3
+  }
 ]
