@@ -1,0 +1,102 @@
+[
+    {
+        "pregunta": "¿Cuál de los siguientes contenidos no es aplicable en la formulación de los objetivos de una planificación estratégica?",
+        "opciones": [
+            "Que los objetivos sean claros y concisos",
+            "Que los objetivos tengan una métrica",
+            "Que los objetivos no estén limitados en el tiempo",
+            "Que los objetivos tengan en cuenta las características del equipo"
+        ],
+        "respuestaCorrecta": 2
+    },
+    {
+        "pregunta": "¿Qué herramienta se utiliza comúnmente para analizar el entorno externo e interno de una organización?",
+        "opciones": [
+            "Matriz FODA / DAFO",
+            "Diagrama de Gantt",
+            "Análisis de Pareto",
+            "Método Scrum"
+        ],
+        "respuestaCorrecta": 0
+    },
+    {
+        "pregunta": "En la gestión de proyectos, ¿qué significan las siglas KPI?",
+        "opciones": [
+            "Key Project Indicator",
+            "Key Performance Indicator",
+            "Knowledge Process Integration",
+            "Keep Production Initiative"
+        ],
+        "respuestaCorrecta": 1
+    },
+    {
+        "pregunta": "¿Cuál es el planeta más cercano al Sol en nuestro sistema solar?",
+        "opciones": [
+            "Venus",
+            "Marte",
+            "Mercurio",
+            "Júpiter"
+        ],
+        "respuestaCorrecta": 2
+    },
+    {
+        "pregunta": "¿Qué gas representa la mayor parte de la atmósfera terrestre?",
+        "opciones": [
+            "Oxígeno",
+            "Nitrógeno",
+            "Dióxido de carbono",
+            "Argón"
+        ],
+        "respuestaCorrecta": 1
+    },
+    {
+        "pregunta": "¿Quién pintó la famosa obra de 'La Mona Lisa'?",
+        "opciones": [
+            "Vincent van Gogh",
+            "Pablo Picasso",
+            "Leonardo da Vinci",
+            "Miguel Ángel"
+        ],
+        "respuestaCorrecta": 2
+    },
+    {
+        "pregunta": "En geografía, ¿cuál es el océano más grande y profundo de la Tierra?",
+        "opciones": [
+            "Océano Atlántico",
+            "Océano Índico",
+            "Océano Glacial Ártico",
+            "Océano Pacífico"
+        ],
+        "respuestaCorrecta": 3
+    },
+    {
+        "pregunta": "¿En qué año se cayó el Muro de Berlín, marcando un hito histórico?",
+        "opciones": [
+            "1985",
+            "1989",
+            "1991",
+            "1993"
+        ],
+        "respuestaCorrecta": 1
+    },
+    {
+        "pregunta": "¿Qué órgano del cuerpo humano es el principal responsable de filtrar la sangre?",
+        "opciones": [
+            "El hígado",
+            "Los riñones",
+            "El corazón",
+            "Los pulmones"
+        ],
+        "respuestaCorrecta": 1
+    },
+    {
+        "pregunta": "¿Cuál es el metal cuya estructura es líquida a temperatura ambiente?",
+        "opciones": [
+            "Mercurio",
+            "Plomo",
+            "Galio",
+            "Bario"
+        ],
+        "respuestaCorrecta": 0
+    }
+]

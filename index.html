@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Evaluación</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .contenedor-principal {
+            width: 100%;
+            max-width: 540px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 1. El contador encima de todo */
+        .contador {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            background: #e2e8f0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            align-self: center;
+        }
+
+        /* 2. La tarjeta de la pregunta */
+        .card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .titulo-app {
+            color: #2b5c8f;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #f0f2f5;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #2d3748;
+            margin: 0 0 25px 0;
+            font-size: 1.15rem;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        .opciones {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn-opcion {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            font-size: 1rem;
+            background: #fff;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: left;
+            color: #4a5568;
+            line-height: 1.4;
+            transition: all 0.15s ease;
+            -webkit-tap-highlight-color: transparent;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* El círculo de opción */
+        .btn-opcion::before {
+            content: "";
+            display: inline-block;
+            min-width: 22px;
+            height: 22px;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 50%;
+            margin-right: 15px;
+            box-sizing: border-box;
+            background: #fff;
+            transition: all 0.15s ease;
+        }
+
+        .btn-opcion:hover:not(:disabled) {
+            background: #f8fafc;
+            border-color: #cbd5e1;
+        }
+
+        /* ESTADO CORRECTO (Verde) */
+        .btn-opcion.correcto {
+            background-color: #edf7ed !important;
+            border-color: #4caf50 !important;
+            color: #1e4620 !important;
+        }
+        .btn-opcion.correcto::before {
+            border-color: #b4dfb6 !important;
+            background-color: #fff;
+        }
+
+        /* ESTADO INCORRECTO (Rojo) */
+        .btn-opcion.incorrecto {
+            background-color: #fdf2f2 !important;
+            border-color: #ef5350 !important;
+            color: #611a1a !important;
+        }
+        .btn-opcion.incorrecto::before {
+            border-color: #cca3a3 !important;
+            background-color: #cbd5e1;
+            box-shadow: inset 0 0 0 5px #fdf2f2;
+        }
+
+        /* 3. El botón Siguiente debajo de la tarjeta */
+        .btn-siguiente {
+            margin-top: 20px;
+            width: 100%;
+            padding: 16px;
+            background-color: #5c7c8a;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: bold;
+            cursor: pointer;
+            visibility: hidden; /* Se reserva el espacio para que no "salte" la pantalla, pero se oculta */
+            transition: background 0.2s;
+            box-shadow: 0 4px 12px rgba(92, 124, 138, 0.2);
+        }
+
+        .btn-siguiente:hover {
+            background-color: #4a646f;
+        }
+
+        .final {
+            text-align: center;
+            color: #2b5c8f;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <div id="contador" class="contador">Preguntas restantes: --</div>
+
+        <div class="card" id="quiz-box">
+            <h1 class="titulo-app">Cuestionario de Evaluación</h1>
+            <h2 id="pregunta">Cargando pregunta...</h2>
+            <div id="opciones" class="opciones"></div>
+        </div>
+        
+        <button id="btn-siguiente" class="btn-siguiente" onclick="siguiente()">Siguiente Pregunta</button>
+    </div>
+
+    <script>
+        let pool = [];
+        let indiceActual = null;
+        let acerto = false;
+
+        const elContador = document.getElementById("contador");
+        const elPregunta = document.getElementById("pregunta");
+        const elOpciones = document.getElementById("opciones");
+        const elBtnSiguiente = document.getElementById("btn-siguiente");
+        const elQuizBox = document.getElementById("quiz-box");
+
+        const letrasOpciones = ["A", "B", "C", "D", "E", "F"];
+
+        async function iniciar() {
+            try {
+                const respuesta = await fetch('preguntas.json');
+                const datosJson = await respuesta.json();
+                pool = [...datosJson];
+                cargarRonda();
+            } catch (error) {
+                elPregunta.innerText = "Error al cargar el archivo 'preguntas.json'. Recuerda subirlo junto a este archivo a GitHub.";
+                console.error(error);
+            }
+        }
+
+        function cargarRonda() {
+            // Actualizar contador superior
+            elContador.innerText = `Preguntas restantes: ${pool.length}`;
+            
+            if (pool.length === 0) {
+                elContador.style.display = "none";
+                elBtnSiguiente.style.display = "none";
+                elQuizBox.innerHTML = `
+                    <div class="final">
+                        <h2>¡Enhorabuena, Chuster!</h2>
+                        <p>Has limpiado las 80 preguntas de tu pool.</p>
+                        <button class="btn-siguiente" style="visibility:visible;" onclick="location.reload()">Reiniciar todo</button>
+                    </div>`;
+                return;
+            }
+
+            elBtnSiguiente.style.visibility = "hidden";
+            elOpciones.innerHTML = "";
+
+            // Selección RANDOM pura
+            indiceActual = Math.floor(Math.random() * pool.length);
+            const item = pool[indiceActual];
+
+            elPregunta.innerText = item.pregunta;
+            
+            item.opciones.forEach((opcion, i) => {
+                const boton = document.createElement("button");
+                boton.classList.add("btn-opcion");
+                
+                const letra = letrasOpciones[i] || "";
+                boton.innerHTML = `<strong>${letra}:</strong>&nbsp;${opcion}`;
+                
+                boton.onclick = () => verificar(i, item.respuestaCorrecta);
+                elOpciones.appendChild(boton);
+            });
+        }
+
+        function verificar(seleccionado, correcto) {
+            const botones = elOpciones.children;
+            acerto = (seleccionado === correcto);
+
+            for (let i = 0; i < botones.length; i++) {
+                botones[i].disabled = true;
+                if (i === correcto) {
+                    botones[i].classList.add("correcto");
+                } 
+                if (i === seleccionado && !acerto) {
+                    botones[i].classList.add("incorrecto");
+                }
+            }
+            // Muestra el botón de abajo al responder
+            elBtnSiguiente.style.visibility = "visible";
+        }
+
+        function siguiente() {
+            if (acerto) {
+                // Si acertó se va para siempre del pool
+                pool.splice(indiceActual, 1);
+            }
+            // Si falló, no entra en el bloque 'if', por lo que se queda en la lista para volver a salir de forma aleatoria
+            cargarRonda();
+        }
+
+        iniciar();
+    </script>
+</body>
+</html>
