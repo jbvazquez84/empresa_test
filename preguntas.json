@@ -17,7 +17,7 @@
   {
     "pregunta": "¿Cuál de las siguientes inversiones no es una inversión productiva?",
     "opciones": ["Inversiones de reemplazamiento.", "Inversiones para reducir costes.", "Inversiones en obligaciones.", "Inversiones de ampliación."],
-    "respuestaCorrecta": 1
+    "respuestaCorrecta": 2
   },
   {
     "pregunta": "La responsabilidad social de la empresa (RSE) es:",
@@ -27,7 +27,7 @@
   {
     "pregunta": "La teoría de Schumpeter sobre la principal función del empresario supone:",
     "opciones": ["Innovación.", "Asunción de riesgos.", "Innovación más asunción de riesgos.", "Ninguna es cierta."],
-    "respuestaCorrecta": 1
+    "respuestaCorrecta": 0
   },
   {
     "pregunta": "La teoría de Frank H. Knight sobre la principal función del empresario supone:",
